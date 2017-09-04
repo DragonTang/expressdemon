@@ -1,0 +1,28 @@
+{
+  "development" : {
+    "host": "192.168.33.94",
+		"username": "root",
+		"password": "Steelcase123",
+    "type": "mysql",
+    "port": 3306,
+		"database": "test",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "idle": 10000
+    }
+  },
+  "production" : {
+    "host": "192.168.33.17",
+    "username": "root",
+    "type": "mysql",
+    "port": 3306,
+    "password": "Steelcase123",
+    "database": "expressdemon",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "idle": 10000
+    }
+  }
+}

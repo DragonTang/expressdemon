@@ -1,0 +1,25 @@
+######################
+# node.js / npm
+######################
+node_modules
+logs/*.log
+logs/*.log.*
+npm-debug.log*
+coverage
+file
+
+
+########################
+# misc / editors
+########################
+*~
+*#
+.DS_STORE
+.netbeans
+nbproject
+.idea
+.vscode
+.scannerwork
+.eslintrc.json
+typings
+jsconfig.json
