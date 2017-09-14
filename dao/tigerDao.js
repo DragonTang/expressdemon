@@ -1,5 +1,5 @@
 import { Tiger } from '../model'
 
-export const _getTigers = () => {
+export const getTigers = () => {
   return Tiger.findAll()
 }

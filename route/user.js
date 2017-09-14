@@ -1,8 +1,7 @@
 import configRoute from './configRoute'
-import userController from '../controller/userController'
+import { getUserList, addUser } from '../dao/userDao'
 import responseWrap from '../utils/responseWrap'
 
-const { getUserList, addUser } = userController
 
 const config = [
   {

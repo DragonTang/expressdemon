@@ -1,11 +1,13 @@
 import crypto from 'crypto'
 import { User } from '../model'
 
-export const _getUserList = async (req, res) => {
+export const getUserList = async (req, res) => {
+  console.log(111111)
+    console.log(req.cookies['isVisit'])
   return User.findAll()
 }
 
-export const _addUser = async (req, res) => {
+export const addUser = async (req, res) => {
   const { name, password } = req.body
   const hash = crypto.createHash('md5').update(password).digest('hex')
   return User.findOrCreate({where: { name, password: hash }})

@@ -1,7 +1,5 @@
 import configRoute from './configRoute'
-import tigerController from '../controller/tigerController'
-
-const { getTigers }  = tigerController
+import { getTigers } from '../dao/tigerDao'
 
 const config = [
   {
