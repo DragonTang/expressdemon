@@ -2,8 +2,11 @@ import crypto from 'crypto'
 import { User } from '../model'
 
 export const getUserList = async (req, res) => {
-  console.log(111111)
-    console.log(req.cookies['isVisit'])
+  console.log(3333333)
+    console.log(req.cookies['testSession'])
+        console.log(req.cookies['bcd'])
+                console.log(req.cookies['abc'])
+      console.log(33333333)
   return User.findAll()
 }
 

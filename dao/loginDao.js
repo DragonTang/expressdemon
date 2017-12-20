@@ -13,7 +13,9 @@ export const login = async (req, res, next) => {
   })
   .then((result) => {
     if (result.length) {
-      res.cookie('isVisit', 'hhh', { maxAge: 1000 * 600 })
+      console.log(req.Url)
+      res.cookie('testCookie11', 'hhh', { maxAge: 1000 * 600, domain: '192.168.33.94' })
+      // req.session.isVisit = 'abcdefg';
       res.status(Code.OK)
       res.send({code: 1, data: result})
       return

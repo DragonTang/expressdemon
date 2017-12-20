@@ -1,6 +1,6 @@
 {
   "development" : {
-    "host": "192.168.33.94",
+    "host": "192.168.33.114",
 		"username": "root",
 		"password": "Steelcase123",
     "type": "mysql",

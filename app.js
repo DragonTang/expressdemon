@@ -5,6 +5,7 @@ import path from 'path'
 import fs from 'fs'
 import https from 'https'
 import cookieParser from 'cookie-parser'
+import session from 'express-session'
 import { corsConfig } from './config/cors'
 import './utils/db'
 import serverIp from './config/serviceIp'
@@ -16,6 +17,11 @@ const app = express()
 const { methods } = corsConfig
 
 app.use(cookieParser())
+app.use(session({
+  secret: 'recommand 128 bytes random string',
+  name: 'testSession',
+  cookie: { maxAge: 60 * 1000 }
+}))
 app.use(cors({methods}))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
