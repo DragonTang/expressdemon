@@ -24,6 +24,7 @@
     "express-session": "^1.15.5",
     "mysql2": "^1.4.1",
     "nodemon": "^1.11.0",
+    "qr-image": "^3.2.0",
     "sequelize": "^4.7.2"
   }
 }

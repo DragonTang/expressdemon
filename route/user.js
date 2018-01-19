@@ -15,4 +15,4 @@ const config = [
     method: responseWrap(addUser)
   }
 ]
-export default configRoute(con fig)
+export default configRoute(config)
